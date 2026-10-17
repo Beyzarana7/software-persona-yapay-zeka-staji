@@ -4,9 +4,11 @@
 
 Bu proje, Makine ve Derin Öğrenme Uygulamaları eğitimi kapsamında hazırlanmıştır. UCI AI4I 2020 sentetik veri seti kullanılarak üretim ekipmanlarının proses ölçümlerinden arıza durumu sınıflandırılır. Gelecekteki arıza zamanı veya arızaya kalan süre tahmin edilmez.
 
+[Proje raporunu aç](./Ariza_Siniflandirma_Proje_Raporu.pdf)
+
 ## Çalıştırma
 
-[Google Colab'da aç](https://colab.research.google.com/github/Beyzarana7/software-persona-yapay-zeka-staji/blob/main/02-uretim-ekipmani-ariza-siniflandirma/Rana_Beyza_Ariza_Siniflandirma.ipynb)
+[Google Colab'da aç](https://colab.research.google.com/github/Beyzarana7/software-persona-yapay-zeka-staji/blob/main/04-makine-ogrenmesi-ariza/Rana_Beyza_Ariza_Siniflandirma.ipynb)
 
 Colab'da **Çalışma zamanı > Tümünü çalıştır** seçin. GPU gerekmez. CSV, UCI'den otomatik indirilir ve SHA-256 ile sürümü doğrulanır.
 

@@ -2,13 +2,20 @@
 
 **Rana Beyza Culus · Endüstri Mühendisi**
 
-Bu depo, Software Persona Yapay Zekâ Stajı kapsamında hazırlanan projeleri içerir. Her proje kendi klasöründe, açıklaması ve çalıştırma adımlarıyla birlikte yer alır.
+Bu depo, Software Persona Yapay Zekâ Stajı kapsamında hazırlanan dört projeyi içerir. Her proje kendi klasöründe, açıklaması ve ilgili dosyalarıyla birlikte yer alır.
 
-| Proje | Eğitim alanı | İçerik |
+| Eğitim alanı | Proje | İncele |
 | --- | --- | --- |
-| [İvme - Üretim İyileştirme ve Aksiyon Takip Paneli](./01-ivme-uretim-aksiyon-paneli/) | Web Geliştirme ve Yapay Zekâ | React ile aksiyon oluşturma, listeleme, güncelleme ve silme |
-| [Üretim Ekipmanlarında Arıza Durumu Sınıflandırması](./02-uretim-ekipmani-ariza-siniflandirma/) | Makine ve Derin Öğrenme Uygulamaları | Python ile sınıflandırma, model karşılaştırması ve hata analizi |
+| Yapay Zekâ İçin Basitleştirilmiş Python | Üretim tesisinde kısa vadeli enerji tüketimi tahmini | [Proje klasörü](./01-python-enerji-tahmini/) |
+| Web Geliştirme ve Yapay Zekâ | İvme - Üretim İyileştirme ve Aksiyon Takip Paneli | [Proje klasörü](./02-ivme-web-uygulamasi/) |
+| Yapay Zekâ ile İçerik Üretimi | DengeOps - Kurgusal marka ve içerik çalışması | [Proje klasörü](./03-dengeops-icerik-uretimi/) |
+| Makine ve Derin Öğrenme Uygulamaları | Üretim ekipmanlarında arıza durumu sınıflandırması | [Proje klasörü](./04-makine-ogrenmesi-ariza/) |
 
-[İvme canlı uygulama](https://ivme-uretim-aksiyon-rana.netlify.app/)
+## Uygulama ve sunum bağlantıları
 
-Arıza sınıflandırma projesi UCI AI4I 2020 sentetik veri setini kullanır. Veri kaynağı, lisans ve sonuçların sınırları ilgili projenin README dosyasında açıklanır.
+- [Enerji tahminini Colab'da aç](https://colab.research.google.com/github/Beyzarana7/software-persona-yapay-zeka-staji/blob/main/01-python-enerji-tahmini/Rana_Beyza_Enerji_Tahmini.ipynb)
+- [İvme canlı uygulama](https://ivme-uretim-aksiyon-rana.netlify.app/)
+- [DengeOps Canva sunumu](https://www.canva.com/d/tqrPhqPk8LBek_k)
+- [Arıza sınıflandırmasını Colab'da aç](https://colab.research.google.com/github/Beyzarana7/software-persona-yapay-zeka-staji/blob/main/04-makine-ogrenmesi-ariza/Rana_Beyza_Ariza_Siniflandirma.ipynb)
+
+Enerji tahmini gerçek tesis verisini, arıza sınıflandırması sentetik UCI AI4I 2020 verisini kullanır. DengeOps kurgusal bir marka çalışmasıdır. Veri kaynakları, lisans notları ve kullanım sınırları her projenin kendi klasöründe açıklanır.
