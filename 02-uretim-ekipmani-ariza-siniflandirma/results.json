@@ -1,0 +1,192 @@
+{
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0"
+  },
+  "data_sha256": "dc6630cd9b1f0f853922fad78a1b6436570d3f1ec863f1dd5c4340ac56bc8a8e",
+  "shape": [
+    10000,
+    14
+  ],
+  "missing": 0,
+  "duplicates": 0,
+  "unique_id": true,
+  "target_counts": {
+    "0": 9661,
+    "1": 339
+  },
+  "splits": {
+    "train": {
+      "n": 6000,
+      "positive": 255,
+      "udi_start": 1,
+      "udi_end": 6000
+    },
+    "validation": {
+      "n": 2000,
+      "positive": 45,
+      "udi_start": 6001,
+      "udi_end": 8000
+    },
+    "test": {
+      "n": 2000,
+      "positive": 39,
+      "udi_start": 8001,
+      "udi_end": 10000
+    }
+  },
+  "features": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temperature gap [K]",
+    "Mechanical power [W]",
+    "Wear torque [minNm]"
+  ],
+  "excluded": [
+    "UDI",
+    "Product ID",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "validation": [
+    {
+      "model": "Çoğunluk",
+      "threshold": 0.5,
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "ap": 0.0225
+    },
+    {
+      "model": "Lojistik regresyon",
+      "threshold": 0.86,
+      "f1": 0.42201834862385323,
+      "precision": 0.359375,
+      "recall": 0.5111111111111111,
+      "ap": 0.2949053084207733
+    },
+    {
+      "model": "Random Forest",
+      "threshold": 0.71,
+      "f1": 0.8461538461538461,
+      "precision": 1.0,
+      "recall": 0.7333333333333333,
+      "ap": 0.8136072173940538
+    }
+  ],
+  "selected": "Random Forest",
+  "test": [
+    {
+      "model": "Çoğunluk",
+      "threshold": 0.5,
+      "accuracy": 0.9805,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "ap": 0.0195,
+      "roc_auc": 0.5,
+      "confusion": [
+        [
+          1961,
+          0
+        ],
+        [
+          39,
+          0
+        ]
+      ]
+    },
+    {
+      "model": "Lojistik regresyon",
+      "threshold": 0.86,
+      "accuracy": 0.98,
+      "precision": 0.47368421052631576,
+      "recall": 0.23076923076923078,
+      "f1": 0.3103448275862069,
+      "ap": 0.3518681308639953,
+      "roc_auc": 0.9072294355313224,
+      "confusion": [
+        [
+          1951,
+          10
+        ],
+        [
+          30,
+          9
+        ]
+      ]
+    },
+    {
+      "model": "Random Forest",
+      "threshold": 0.71,
+      "accuracy": 0.992,
+      "precision": 1.0,
+      "recall": 0.5897435897435898,
+      "f1": 0.7419354838709677,
+      "ap": 0.7463447324292429,
+      "roc_auc": 0.929065495103231,
+      "confusion": [
+        [
+          1961,
+          0
+        ],
+        [
+          16,
+          23
+        ]
+      ]
+    }
+  ],
+  "failure_modes": {
+    "TWF": {
+      "positive_rows": 10,
+      "missed": 9
+    },
+    "HDF": {
+      "positive_rows": 0,
+      "missed": 0
+    },
+    "PWF": {
+      "positive_rows": 10,
+      "missed": 2
+    },
+    "OSF": {
+      "positive_rows": 21,
+      "missed": 4
+    },
+    "RNF": {
+      "positive_rows": 0,
+      "missed": 0
+    }
+  },
+  "feature_duplicate_rows": 0,
+  "mode_target_disagreements": 27,
+  "false_negative_ids": [
+    8027,
+    8112,
+    8200,
+    8358,
+    8507,
+    8610,
+    8691,
+    8927,
+    9016,
+    9017,
+    9019,
+    9175,
+    9577,
+    9614,
+    9664,
+    9759
+  ],
+  "false_positive_ids": []
+}
